@@ -11,5 +11,6 @@ export default function Shot({ src, alt, className = '' }) {
       </div>
     )
   }
-  return <img src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} className={`object-cover ${className}`} />
+  const imageSrc = `${import.meta.env.BASE_URL}${src.replace(/^\/+/, '')}`
+  return <img src={imageSrc} alt={alt} loading="lazy" onError={() => setFailed(true)} className={`object-cover ${className}`} />
 }

@@ -42,7 +42,7 @@ export default function Home() {
             {noPhoto ? (
               <div className="grid h-full place-items-center text-center text-sm text-ink/60">Add your photo at<br /><code>public/profile.jpg</code></div>
             ) : (
-              <img src={site.photo} alt={`Portrait of ${site.name}`} onError={() => setNoPhoto(true)} className="h-full w-full object-cover object-top" />
+              <img src={`${import.meta.env.BASE_URL}${site.photo.replace(/^\/+/, '')}`} alt={`Portrait of ${site.name}`} onError={() => setNoPhoto(true)} className="h-full w-full object-cover object-top" />
             )}
           </div>
           <span className="absolute -left-3 bottom-8 flex items-center gap-2 rounded-full border border-ink bg-white px-3 py-1.5 text-xs font-bold shadow-[2px_2px_0_#111]">

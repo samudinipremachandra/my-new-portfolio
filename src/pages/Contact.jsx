@@ -35,9 +35,9 @@ export default function Contact() {
         <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl">Let's build something <span className="marker">useful.</span></h1>
         <p className="mt-5 max-w-md text-ink/75">Got an internship, a junior role or a project idea? Send me a message and I'll reply as soon as I can.</p>
         <div className="mt-8 space-y-3">
-          <a className={link} href={`mailto:${site.email}`}><Mail size={20} />{site.email}</a>
-          <a className={link} href={site.github} target="_blank" rel="noreferrer"><Github size={20} />GitHub</a>
-          <a className={link} href={site.linkedin} target="_blank" rel="noreferrer"><Linkedin size={20} />LinkedIn</a>
+          <a className={link} href="mailto:samudinipremachandra@gmail.com"><Mail size={20} />{site.email}</a>
+          <a className={link} href="https://github.com/samudinipremachandra" target="_blank" rel="noreferrer"><Github size={20} />GitHub</a>
+          <a className={link} href="https://www.linkedin.com/in/samudini-premachandra-046167379" target="_blank" rel="noreferrer"><Linkedin size={20} />LinkedIn</a>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ export default function Contact() {
           <div role="status" className="py-6 text-center">
             <CheckCircle2 className="mx-auto mb-3" size={36} />
             <h2 className="text-xl font-extrabold">Form looks good!</h2>
-            <p className="mt-2 text-ink/70">This site isn't connected to an email service yet, so nothing was sent. Please email me directly at <a className="font-bold underline" href={`mailto:${site.email}`}>{site.email}</a>.</p>
+            <p className="mt-2 text-ink/70">This site isn't connected to an email service yet, so nothing was sent. Please email me directly at <a className="font-bold underline" href="mailto:samudinipremachandra@gmail.com">samudinipremachandra@gmail.com</a>.</p>
           </div>
         ) : (
           <form onSubmit={submit} noValidate>

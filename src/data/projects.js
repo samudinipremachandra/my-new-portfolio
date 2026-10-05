@@ -90,5 +90,75 @@ export const projects = [
     challenges: 'Implementing effective AI algorithms for file categorization while ensuring data privacy and maintaining a user-friendly interface.',
     learned: 'Enhanced my skills in full-stack development, AI integration, Python programming, and creating seamless user experiences for complex applications.',
   },
+{
+    slug: 'hand-gesture-game-controller',
+name: 'Hand Gesture Game Controller',
+category: 'Python / Computer Vision',
+tagline: 'Real-time hand gesture-based game controller',
+description: 'A real-time computer vision application that transforms hand gestures into keyboard inputs, allowing users to control games using intuitive hand movements.',
 
+image: '/projects/hand-gesture.png',
+
+tech: ['Python', 'OpenCV', 'MediaPipe', 'PyAutoGUI', 'Git & GitHub'],
+
+github: 'https://lnkd.in/gTzUWBfw',
+live: '',
+
+problem: 'Traditional game controllers require physical interaction with a keyboard or controller, limiting more natural and interactive ways to control games.',
+
+solution: 'The system uses computer vision and hand landmark detection to recognize predefined hand gestures and convert them into keyboard inputs for real-time game control.',
+
+features: [
+'Real-time hand gesture detection',
+'Hand landmark tracking using MediaPipe',
+'Gesture recognition for Jump, Slide, Turn Left, and Turn Right',
+'Automatic conversion of gestures into keyboard inputs',
+'Real-time camera-based interaction',
+'Coordinate-based gesture decision making'
+],
+
+contribution: 'Designed and developed the Python application, including hand landmark detection, gesture recognition, coordinate-based decision making, and keyboard input automation.',
+
+challenges: 'Accurately detecting different hand gestures in real time and converting changing hand positions into reliable game controls without unwanted or repeated inputs.',
+
+learned: 'Gained hands-on experience in real-time computer vision, hand landmark detection, gesture recognition, Human–Computer Interaction (HCI), coordinate-based decision making, and Object-Oriented Programming (OOP).'
+
+  },
+  {
+
+    slug: 'autonomous-threat-detection',
+name: 'Autonomous Real-Time Threat Detection & Automated Security Alert System',
+category: 'AI / Computer Vision',
+tagline: 'Real-time weapon detection and automated security alert system',
+description: 'An end-to-end computer vision system that detects potential weapon threats from real-time video streams, captures forensic evidence, and triggers automated audible security alerts.',
+
+image: '/projects/threat-detection.png',
+
+tech: ['Python', 'YOLOv8', 'OpenCV', 'Ultralytics', 'Computer Vision'],
+
+github: 'https://lnkd.in/gR7KzjwK',
+live: '',
+
+problem: 'Traditional CCTV surveillance mainly relies on human monitoring, which can delay the identification and response to potential security threats.',
+
+solution: 'A real-time computer vision pipeline that automatically detects weapon threats in video streams, captures evidence, and triggers immediate audible alerts to support faster security response.',
+
+features: [
+'Real-time weapon detection using YOLOv8',
+'Live camera stream processing with OpenCV',
+'Automated audible security alerts',
+'Automatic detection snapshot logging',
+'Timestamped forensic evidence',
+'Cooldown mechanism to prevent repeated evidence logging',
+'Optimized real-time detection pipeline'
+],
+
+contribution: 'Developed the computer vision pipeline, fine-tuned the YOLOv8 detection model, implemented real-time video processing, automated snapshot logging, and designed the non-blocking alert mechanism.',
+
+challenges: 'Maintaining real-time detection performance while processing continuous video frames and triggering alerts without freezing the camera stream was a key challenge. Reducing repeated detections and unnecessary evidence logs also required careful handling.',
+
+learned: 'Gained practical experience in YOLO-based object detection, real-time computer vision, OpenCV video processing, model optimization, Python multithreading, automated evidence logging, and building AI systems for real-world applications.'
+
+
+  }
 ]
